@@ -1,6 +1,5 @@
 package com.example.testapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -81,12 +80,12 @@ public class MainActivity extends Baseactivity implements ViewPager.OnPageChange
 
         for (int i = 0; i < dotsCount; i++) {
             dots[i] = new ImageView(this);
-            dots[i].setImageResource(R.drawable.nonselecteditem_dot);
+            dots[i].setImageResource(R.drawable.nonselected_dot);
 
             pagerIndicator.addView(dots[i], params);
         }
 
-        dots[0].setImageResource(R.drawable.selecteditem_dot);
+        dots[0].setImageResource(R.drawable.selected_dot);
 
     }
 
@@ -113,9 +112,9 @@ public class MainActivity extends Baseactivity implements ViewPager.OnPageChange
     @Override
     public void onPageSelected(int position) {
         for (int i = 0; i < dotsCount; i++) {
-            dots[i].setImageResource(R.drawable.nonselecteditem_dot);
+            dots[i].setImageResource(R.drawable.nonselected_dot);
         }
-        dots[position].setImageResource(R.drawable.selecteditem_dot);
+        dots[position].setImageResource(R.drawable.selected_dot);
 
 
         if (position + 1 == dotsCount) {
