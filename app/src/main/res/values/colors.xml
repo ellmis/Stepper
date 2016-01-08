@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8bbb4b</color>
+    <color name="colorPrimaryDark">#689927</color>
+    <color name="colorAccent">#8bbb4b</color>
+    <color name="primary">#8bbb4b</color>
+    <color name="activity_bg">#d9d9d9</color>
+    <color name="skip_button_color">#e5e5e5</color>
+</resources>
